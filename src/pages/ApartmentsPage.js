@@ -15,6 +15,7 @@ function ApartmentsPage() {
   return (
     <div>
       <h3>List of apartments</h3>
+      <Link to="/apartments/add-apartment"><button>Add apartment</button></Link> 
 
       {apartments.map((apartment) => (
         <Link to={`/apartments/${apartment._id}`}>
